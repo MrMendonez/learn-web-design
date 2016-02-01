@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+    <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+    <meta name="author" content="Darryl Mendonez used Bootstrap framework by Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <title>Learn Web Design</title>
+    <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <style>
+    </style>
+</head>
+<body>
+<!----------------Begin Navbar------------------------------>
+<div id="navigation-bar"></div>
+<!---------------End Navbar------Begin Content------------------------>
+<div class = "container">
+    <div id = "myCarousel" class = "carousel slide">
+      
+      <ol class = "carousel-indicators">
+          <li data-target = "#myCarousel" data-slide-to = "0" class = "active"></li>
+          <li data-target = "#myCarousel" data-slide-to = "1"></li>
+          <li data-target = "#myCarousel" data-slide-to = "2"></li>
+      </ol>
+      
+      <div class = "carousel-inner">
+          
+          <div class = "item active">
+              <img src = "images/sunsetgirl.jpg" alt = "Sunset" class = "img-responsive"> 
+              <div class = "carousel-caption">
+                  <h3>Sunset</h3>
+                  <p>Carousel Project</p>
+              </div>
+          </div>
+          
+          <div class = "item">
+              <img src = "images/skyline.jpg" alt = "Skyline" class = "img-responsive"> 
+              <div class = "carousel-caption">
+                  <h3>Skyline</h3>
+                  <p>Carousel Project</p>
+              </div>
+          </div>
+          
+          <div class = "item">
+              <img src = "images/naturemountains.jpg" alt = "Mountains" class = "img-responsive"> 
+              <div class = "carousel-caption">
+                  <h3>Mountains</h3>
+                  <p>Carousel Project</p>
+              </div>
+          </div>
+          
+      </div>
+      
+      <a class = "carousel-control left" href = "#myCarousel" data-slide = "prev">
+          <span class = "icon-prev"></span>
+      </a>
+      
+      <a class = "carousel-control right" href = "#myCarousel" data-slide = "next">
+          <span class = "icon-next"></span>
+      </a>
+         </div>
+    
+</div>
+        <!------------End Contents Area---------Begin Footer Bar------------------------>
+        <div id="footer" class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container">
+                <p class="navbar-text pull-right">Site built by Darryl Mendonez</p>
+            </div>
+        </div>
+        <!----------------Begin Contact Popup-------------->
+        <div id="contact-pop-up"></div>
+        <!----------------End Contact Popup-------------->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>
+            $(function() {
+                $('.jumbotron').hide(0).fadeIn(2000)
+                $('#footer').hide(0).delay(500).show(1500);
+                $('.col-md-4').hide(0).delay(2000).slideDown(2000);
+                });
+        </script>
+        <script src="js/loadrepeateddivs.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src = "js/bootstrap-hover-dropdown.js"></script>
+    </body>
+</html>

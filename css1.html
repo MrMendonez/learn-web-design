@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+    <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+    <meta name="author" content="Darryl Mendonez used Twitter Bootstrap code by Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <title>Learn Web Design</title>
+    <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <style>
+    </style>
+</head>
+<body>
+<!----------------Begin Navbar------------------------------>
+<div id="navigation-bar"></div>
+<!-----------------------------------End Navbar-----Begin Article--------------------------------------->
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-lg-9">
+                    <div class = "panel panel-default">
+                        <div class = "panel-body">
+                            <div class = "page-header">
+                                <div class = "page-header">
+                                <h3>CSS3<img class="img-responsive pull-right" src="images/css3.png"><br>
+<small>Cascading Style Sheets is a style sheet language used for describing the look and formatting of a document written in a markup language.</small></h3>
+                            </div>
+                                <p><div class = "text-center"><h4>Chapter 1 - Introduction to CSS</h4></div><br>
+<b>Topics covered:</b>
+    <ul>
+        <li><a href="#intro">Introduction to CSS</a></li>
+        <li><a href="#types">Types of CSS</a></li>
+        <li><a href="#history">History</a></li>
+        <li><a href="#uses">Uses</a></li>
+        <li><a href="#benefits">The Benefits</a></li>
+        <li><a href="#disadvantages">Disadvantages</a></li>
+        <li><a href="#work">How Does CSS Work?</a></li>
+        <li><a href="#syntax">CSS Syntax</a></li>
+        <li><a href="#comment">Comment in CSS</a></li>
+        <li><a href="#howto">How to Add Comment in CSS Document</a></li>
+        <li><a href="#watch">Watch: Learn HTML and CSS in 30 Minutes</a></li>
+        <li><a href="#properties">Common CSS Properties and Values</a></li>
+    </ul>
+<a name="intro"></a><b>Introduction to CSS</b>
+    <ul>
+        <li>CSS stands for Cascading Style Sheets</li>
+        <li>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation semantics of a document written in a markup language</li>
+        <li>CSS was created by Hakon Wium Lie and Bert Bos and was adopted as a World Wide Web Consortium (W3C) recommendation in late 1996</li>
+        <li>The CSS specifications are maintained by the W3C</li>
+        <li>Style sheets are simply text files (.css), composed of lines of code that tell browsers how to display an html page</li>
+        <li>CSS is a language that can be used to define styles against any html element</li>
+        <li>CSS is used to add layout to your websites</li>
+        <li>CSS is a language that is used to define layout of html documents. For example, CSS covers fonts, colors, margins, lines, height, width, background images, advanced positions, and many other things</li>
+        <li>The main purpose of CSS is to define the presentation of html elements</li>
+        <li>CSS are a series of instructions that specify how markup elements should appear on a web page</li>
+    </ul>    
+<a name="types"></a><b>Types of CSS</b>
+    <ul>
+        <li>There are 3 types of CSS</li>
+            <ul>
+                <li>Inline</li>
+                <li>Internal (Embedded)</li>
+                <li>External</li>
+            </ul>
+        <li>Inline Style</li>
+            <ul>
+                <li>Inline style is defined directly in the tag on document of a particular page element</li>
+                <li>Inline styles affect only the tag they are applied to</li>
+                <li>Example 1: &lt;a href=”” style”text-decoration:none;”>&lt;/a></li>
+                <li>Example 2: &lt;p style=”font-size:14px; color:green;”>&lt;/p></li>
+                <li>Advantage - Can be useful for unique changes to an elements styling within a document</li>
+                <li>Disadvantage - Hard to maintain consistency across related elements</li>
+            </ul>
+        <li>Internal Style</li>
+            <ul>
+                <li>Internal style is defined in the &lt;head> section of a given document</li>
+                <li>Internal styles affect only the tags on the page they are embedded in</li>
+                <li>Should be used when a single document has a unique style</li>
+                <li>Defined in the head section by using the &lt;style> tag</li>
+                <li>Example: &lt;head><br>
+    	   &lt;title>Internal Style&lt;/title><br>
+		   &lt;style type=”text/css”><br>
+		   p {margin-left: 20px}<br>
+		   &lt;/style><br>
+		   &lt;/head></li>
+                <li>Advantages - Manage styling within a single document</li>
+                <li>Disadvantages - Hard to maintain consistency across several related web pages</li>
+            </ul>
+        <li>External Style</li>
+            <ul>
+                <li>External style is defined on the external style sheet, which is linked to a web page</li>
+                <li>External style is known as linked style sheet</li>
+                <li>External styles are used to define in a separate document and then attached to various web documents</li>
+                <li>Each web page must link to the style sheet using the &lt;link> tag</li>
+                <li>Browser reads styles definitions from the CSS file</li>
+                <li>Example: &lt;head><br>
+         &lt;link rel=”stylesheet” type=”text/css” href=”mystyle.css” /><br>
+		     &lt;/head></li>
+                <li>Advantage - Can link to multiple documents</li>
+                <li>Disadvantage - Need to use consistent markup on multiple pages</li>
+            </ul>
+    </ul>
+<a name="history"></a><b>History of CSS</b>
+    <ul>
+        <li>Style sheets have existed since the beginnings of SGML in the 1970s</li>
+        <li>Nine different style sheet languages were proposed to the W3C</li>
+        <li>CSS level 1 - 1996; CSS level 2 - 1997</li>
+    </ul>
+<a name="uses"></a><b>Use of CSS</b>    
+    <ul>
+        <li>The main use for CSS is to improve html web pages by decorating them, and displaying them in a better way than they would normally do</li>
+        <li>A CSS is a single page of formatting instructions that can control the appearance of many html pages at once</li>
+        <li>CSS is used to define how web pages should look when viewed in other media than a web browser</li>
+    </ul>
+<a name="benefits"></a><b>The Benefits of CSS</b>
+    <ul>
+        <li>CSS saves you time</li>
+        <li>CSS saves your visitors time</li>
+        <li>Pages load faster</li>
+        <li>Pages and sites are easier to maintain</li>
+        <li>Easy maintenance</li>
+        <li>Superior styles to html</li>
+        <li>Multiple device compatibility</li>
+        <li>Global web standards</li>
+        <li>CSS gives you design flexibility</li>
+        <li>CSS also allows websites to be planned, produced, and maintained in much less time</li>
+        <li>You can change the appearance of your entire document by adjusting a few rules in a style sheet</li>
+        <li>Separation of html content from appearance</li>
+    </ul>
+<a name="disadvantages"></a><b>Disadvantages of CSS</b>
+    <ul>
+        <li>Browser compatibility</li>
+        <li>Number of multiple backgrounds per element</li>
+        <li>Lack of variables</li>
+        <li>Collapsing margins</li>
+        <li>Vertical control limitation</li>
+    </ul>
+<a name="work"></a><b>How Does CSS Work?</b>
+    <ul>
+        <li>When the web browser displays a document, it must combine the document's content with its style information</li>
+        <li>It processes the document in two stages:</li>
+            <ul>
+                <li>Thebrowser converts the markup language and the CSS into a structure called the DOM (Document Object Model)</li>
+                <li>The DOM represents the document in the computer's memory</li>
+                <li>It combines the document's content with its style</li>
+                <li>The browser displays the contents of the DOM</li>
+            </ul>
+        <li>Example: Instead of defining fonts and colors each time you start a new table cell, you can define a style and then, simply refer to that style in your table cells</li>
+            <ul>
+                <li>With HTML:<br> 
+                &lt;html><br>
+    	        &lt;head>&lt;/head><br>
+		        &lt;body><br>
+		        &lt;table><br>
+		        &lt;tr><br>
+		        &lt;td bgcolor=”#00FC00 align=”right”><br>
+		        &lt;font face=”Segoe UI”><br>
+		        &lt;b>Syntax1&lt;/b><br>
+                &lt;/font>&lt;/td>&lt;/tr><br>
+    	        &lt;tr><br>
+		        &lt;td bgcolor=”00FC00” aligh=”right”><br>
+		        &lt;font face=”Segoe UI”><br>
+		        &lt;b>Syntax2&lt;/b><br>
+		        &lt;/font>&lt;/td>&lt;/tr><br>
+		        &lt;/table><br>
+		        &lt;/body><br>
+		        &lt;/html></li>
+                <li>With CSS: a selector called yourtext is defined<br>
+    			&lt;html><br>
+				&lt;head><br>
+				&lt;title>test&lt;/title><br>
+				&lt;style><br>
+				.yourtext<br>
+				{<br>
+				background-color:#00FC00;<br>
+				text-align:right;<br>
+				font:Segoe UI;<br>
+				}<br>
+				&lt;/style><br>
+				&lt;/head><br>
+				&lt;body><br>
+				&lt;table><br>
+				&lt;tr><br>
+				&lt;td><br>
+				&lt;p class=”yourtext”><br>
+				Syntax1&lt;/p>&lt;/td><br>
+				&lt;/tr><br>
+				&lt;tr><br>
+				&lt;td><br>
+				&lt;p class=”yourtext”>Syntax2&lt;/p><br>
+				&lt;/td><br>
+				&lt;/tr><br>
+				&lt;/table><br>
+				&lt;/body><br>
+				&lt;/html><br>
+                <br>
+			    Output:<br>
+				Syntax1<br>
+				Syntax2</li>
+            </ul>
+    </ul>
+<a name="syntax"></a><b>CSS Syntax</b>
+    <ul>
+        <li>The CSS syntax consists of a set of rules. These rules have 3 parts:</li>
+            <ul>
+                <li>Selector</li>
+                <li>Property</li>
+                <li>Value</li>
+            </ul>
+        <li>Syntax: selector {property: value;}</li>
+        <li>Example: BODY {color:yellow;}</li>
+        <li>Selector:</li>
+            <ul>
+                <li>The selector is normally the html element/tag you wish to define</li>
+                <li>Selector is usually standard html elements (h1, p, body, table, etc.)</li>
+                <li>We change the style of selectors by changing one of many attributes</li>
+            </ul>
+        <li>Property:</li>
+            <ul>
+                <li>The property is the attribute you wish to change</li>
+                <li>Every property has the value</li>
+                <li>If the value is multiple words, put quotes around the value</li>
+                <li>Properties are names of attributes that are used to describe an object (color, text, font-face, font-size, etc.)</li>
+                <li>Property is any characteristic of the selector that we wish to change like color, size, etc.</li>
+            </ul>
+        <li>Value:</li>
+            <ul>
+                <li>Values are “describing” properties (yellow, bold, fixed, arial, etc.)</li>
+                <li>Value is what you wish the style to be</li>           
+            </ul>
+    </ul>
+<a name="comment"></a><b>Comment in CSS</b>
+    <ul>
+        <li>Comment is used to explain our code and may help us when we edit the source code at a later date</li>
+        <li>Comments are ignored by browsers</li>
+        <li>Everything that lies between these delimiters is the comment and should be ignored by the CSS parser</li>
+        <li>Comments can span multiple lines, but may not be nested</li>
+        <li>Comments can include CSS elements that we don’t want in the document but don’t want to delete completely</li>
+        <li>Comments are used to write complicated CSS to add clarification</li>
+        <li>Comments can also include meta information like:</li>
+            <ul>
+                <li>Author</li>
+                <li>Date created</li>
+                <li>Copyright information</li>
+            </ul>
+        <li>Syntax:  // single-line comment</li>
+    	<li>/* This is a comment that
+                            spans multiple lines */</li>
+    </ul>
+<a name="howto"></a><b>How to Add Comments in a CSS Document</b>
+    <ol>
+        <li>Add the first part of the CSS comment
+/*</li>
+        <li>Write the text or information you want to be hidden</li>
+        <li>Close the comment
+        */</li>
+    </ol>
+<a name="watch"></a><b>Watch: Learn HTML and CSS in 30 Minutes</b><br>
+The following video will help you understand the common CSS Properties and Values. It has been set to start where the presenter finishes his HTML demonstration and begins teaching CSS.<br>
+<br>
+    <div class="video-container">
+        <iframe width="560" height="315" src="//www.youtube.com/embed/6_Sstbd6Rnw?rel=0&start=524" frameborder="0" allowfullscreen></iframe>
+    </div><br>
+<b>How to Move Change the Position of objects on a Webpage</b><br>
+<p>You can move the position of any object you have on your webpage by using CSS. By using a style attribute you can define exactly where you want your objects to be. We will use the following code as an example: &lt;div style="position:absolute;top:100px;left:200px"><p>Text to be moved from CSS code</p><br>
+    The div tag has a style attribute which allows you to add css code. The 'position:absolue' means relative to the top left of the page the object is being moved from the top 100 pixels (meaning it's moving down 100 pixels) and from the left 200 pixels (meaning it is moving to the right 200 pixels).
+</p>
+<a name="properties"></a><b>Common CSS Properties and Values</b>
+    <ul>
+        <li>Position</li>
+            <ul>
+                <li>Example: position:absolute</li>
+                    <ul>
+                        <li>This means that the selector will not move regardless of how the window is sized</li>
+                    </ul>
+                <li>Top</li>
+                    <ul>
+                        <li>Example: top:100px</li>
+                            <ul>
+                                <li>This means the selector (h1, p, body, table, etc.) is positioned 100 pixels from the top of the page</li>
+                            </ul>
+                    </ul>
+                <li>Left</li>
+                    <ul>
+                        <li>Example: left:50px</li>
+                            <ul>
+                                <li>This means the selector (h1, p, body, table, etc.) is positioned 50 pixels from the left of the page</li>
+                            </ul>
+                    </ul>
+                <li>Example: &lt;h1 style="position:absolute; top:100px; left:50px"></li>
+            </ul>
+        <li>Background</li>
+            <ul>
+                <li>Example: background:yellow</li>
+                <li>Width</li>
+                    <ul>
+                        <li>Example: width:400px</li>
+                            <ul>
+                                <li>This means that the yellow background only stretches 400 pixels wide</li>
+                            </ul>
+                    </ul>
+                <li>Height</li>
+                    <ul>
+                        <li>Example: height:300px</li>
+                            <ul>
+                                <li>This means that the yellow background only stretches 300 pixels wide</li>
+                            </ul>
+                    </ul>
+        <li>Example: &lt;div style="background:yellow; width:400px; height:300px"></li>
+            </ul>
+        <li>Border - solid, dotted</li>
+            <ul>
+                <li>Example: border: 1px solid orange</li>
+                    <ul>
+                        <li>This means that the border will be 1 pixel in width and will be a solid orange color</li>
+                    </ul>
+                <li>Example: &lt;div style="border: 1px solid orange;"></li>
+            </ul>
+        <li>Padding</li>
+            <ul>
+                <li>Example: padding:15px</li>
+                    <ul>
+                        <li>This means that there will be a space of 15 px between the inside of the border and the text within the border</li>
+                    </ul>
+            </ul>
+        <li>Margin</li>
+            <ul>
+                <li>Example: margin:20px</li>
+                    <ul>
+                        <li>This means that the border will be placed 20 pixels away from the left of the page</li>
+                    </ul>
+                <li>There are also margin properties that give you margin only in one direction such as:</li>
+                    <ul>
+                        <li>margin-top</li>
+                        <li>margin-left</li>
+                        <li>margin-right</li>
+                    </ul>
+            </ul>
+        <li>Example: &lt;div style="border: 1px solid orange; padding:15px; margin:40px"></li>
+        <li>Minimum Height</li>
+            <ul>
+                <li>Example: min-height:350px</li>
+            </ul>
+        <li>Maximum Height</li>
+            <ul>
+                <li>Example: max-height:75px</li>
+            </ul>
+        <li>Style Tag - &lt;style>&lt;/style></li>
+            <ul>
+                <li>Style tags allows you to define a class. You can use this class to set the style in another part of your code such as a &lt;div>.</li>
+                <li>Example of a class:<br>
+                &lt;head><br>
+				&lt;title>This is a title&lt;/title<br>
+				&lt;style><br>
+				.newjersey{<br>
+				color:blue<br>
+				}<br>
+				&lt;/style><br>
+				&lt;/head><br>
+				&lt;body><br>
+				&lt;div class=newjersey><br>
+				&lt;h1>Testing the Style tag&lt;/h1><br>
+				&lt;p>This is a paragraph of text.&lt;/p><br>
+				&lt;/div></li>
+                &lt;li>Example of an id:<br>	
+                &lt;head><br>
+				&lt;title>This is a title&lt;/title<br>
+				&lt;style><br>
+				#newjersey{<br>
+				color:orange<br>
+				}<br>
+				&lt;/style><br>
+				&lt;/head><br>
+				&lt;body><br>
+				&lt;div id=newjersey><br>
+				&lt;h1>Testing the Style tag&lt;/h1><br>
+				&lt;p>This is a paragraph of text.&lt;/p>
+				&lt;/div></li>
+            </ul>
+        <li>Elements can also be changed with the &lt;style> tag</li>
+            <ul>
+                <li>If you want all &lt;div>’s to have a border you can set that within the &lt;style> tag</li>
+                <li>Example:<br>
+                &lt;head><br>
+				&lt;title>This is a title&lt;/title<br>
+				&lt;style><br>
+				#newjersey{<br>
+				color:orange<br>
+				}<br>
+                div{<br>
+				border:1px dotted green;<br>
+				&lt;/style><br>
+				&lt;/head><br>
+				&lt;body><br>
+				&lt;div id=newjersey><br>
+				&lt;h1>Testing the Style tag&lt;/h1><br>
+				&lt;p>This is a paragraph of text.&lt;/p><br>
+				&lt;/div></li>
+            </ul>
+    </ul>
+</p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                <div class = "col-lg-3">
+                        <div class = "list-group">
+                            <a href = "https://googledrive.com/host/0B5kZdBK1QTn1amM4clB3Vng0SlU/css1.html" class = "list-group-item active" >
+                                <h4 class = "list-group-item-heading">Chapter 1 - Introduction to CSS</h4>
+                                <p class = "list-group-item-text"><b>Topics Covered:</b>
+                                    <ul>
+                                        <li>What is CSS?</li>
+                                        <li>Type of CSS</li>
+                                        <li>History</li>
+                                        <li>Uses</li>
+                                        <li>The Benefits</li>
+                                        <li>Disadvantages</li>
+                                        <li>How Does CSS Work?</li>
+                                        <li>Watch: Learn HTML and CSS in 30 Minutes</li>
+                                        <li>Common CSS Properties and Values</li>
+                                    </ul>
+                                </p>
+                            </a>
+                            <a href = "https://googledrive.com/host/0B5kZdBK1QTn1amM4clB3Vng0SlU/css2.html" class = "list-group-item">
+                                <h4 class = "list-group-item-heading">Chapter 2 - Colors and Background</h4>
+                                <p class = "list-group-item-text"><b>Topics Covered:</b>
+                                    <ul>
+                                        <li>Color</li>
+                                        <li>CSS Colors: Keywords</li>
+                                        <li>CSS Color: RGB</li>
+                                        <li>CSS Colors: Hex Codes</li>
+                                        <li>CSS Colors: Short Hex Codes</li>
+                                        <li>Background</li>
+                                        <li>Background Color</li>
+                                        <li>Background Image</li>
+                                        <li>Background Repeat</li>
+                                    </ul>
+                                </p>
+                            </a>
+                            <a href = "css3.html" class = "list-group-item">
+                                <h4 class = "list-group-item-heading">Chapter 3 - CSS Video Tutorials</h4>
+                                <p class = "list-group-item-text"><b>Topics Covered:</b>
+                                    <ul>
+                                        <li>9. Watch: Introduction to CSS</li>
+                                        <li>10. Watch: Stylying Text with CSS</li>
+                                        <li>11. Watch: Divs and Styling</li>
+                                        <li>12. Watch: Margins and Paddings</li>
+                                        <li>13. Watch: ID's and Classes</li>
+                                        <li>14. Watch: Removing Browser Border</li>
+                                        <li>15. Watch: CSS Float Property</li>
+                                        <li>16. Watch: CSS Hover Over Properties</li>
+                                        <li>17. Watch: Styling Link States</li>
+                                        <li>18. Watch: Absolute Positioning</li>
+                                        <li>19. Watch: Build a Full HTML Site Layout</li>
+                                    </ul>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <br>
+       <div class = "navbar navbar-default navbar-fixed-bottom">
+           <div class = "container">
+               <p class = "navbar-text pull-right">Site built by Darryl Mendonez</p>
+           </div>
+       </div>
+       <!----------------Begin Contact Popup-------------->
+        <div id="contact-pop-up"></div>
+        <!----------------End Contact Popup-------------->
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/loadrepeateddivs.js"></script>
+        <script src = "js/bootstrap.js"></script>
+        <script src = "js/bootstrap-hover-dropdown.js"></script>
+    </body>
+</html>

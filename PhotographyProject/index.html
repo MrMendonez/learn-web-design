@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+    <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+    <meta name="author" content="Darryl Mendonez used Bootstrap framework by Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <title>Darryl M. Photography</title>
+    <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <style>
+    </style>
+</head>
+<body>
+<!----------------Begin Navbar------------------------------>
+<div id="navigation-bar"></div>
+<!---------------End Navbar------Begin Jumbotron------------------------>
+<div class = "container">
+    <div class = "jumbotron">
+      <center><h2>Darryl M. Photography</h2><br>
+      <p><b>The Earth is art; the photographer is only a witness.<br>
+          -Yann Arthus Bertrand</b></p></center>
+    </div>
+    <br>
+    <!-------End Of Jumbotron----Begin Contents Area----------------->
+    <div id = "myCarousel" class = "carousel slide">
+      <ol class = "carousel-indicators">
+          <li data-target = "#myCarousel" data-slide-to = "0" class = "active"></li>
+          <li data-target = "#myCarousel" data-slide-to = "1"></li>
+          <li data-target = "#myCarousel" data-slide-to = "2"></li>
+      </ol>
+      <div class = "carousel-inner">
+          <div class = "item active">
+              <img src = "http://cdn.lightgalleries.net/4bd5ebfa72113/images/mccall_wedding_photographer-099-1.jpg" alt = "Wedding 2" class = "img-responsive"> 
+              <div class = "carousel-caption">
+                  <h3>Wedding Kiss in the Sun</h3>
+                  <a href = "wedding.html" class="btn btn-primary">View Wedding Gallery</a>
+              </div>
+          </div>
+          <div class = "item">
+              <img src = "http://www.craftsy.com/blog/wp-content/uploads/2013/07/mountain-reflections1.jpg" alt = "Mountains" class = "img-responsive"> 
+              <div class = "carousel-caption">
+                  <h3>Mountains</h3>
+                  <a href = "nature.html" class="btn btn-primary">View Nature Gallery</a>
+              </div>
+          </div>
+          <div class = "item">
+              <img src = "http://lifelessonsmilitarywife.com/wp-content/uploads/2011/12/DSC06825.jpg" alt = "Belgium" class = "img-responsive"> 
+              <div class = "carousel-caption">
+                  <h3>Belgium</h3>
+                  <a href = "cities.html" class="btn btn-primary">View Famous Cities Gallery</a>
+              </div>
+          </div>
+        </div>
+            <a class = "carousel-control left" href = "#myCarousel" data-slide = "prev">
+                <span class = "icon-prev"></span>
+            </a>
+            <a class = "carousel-control right" href = "#myCarousel" data-slide = "next">
+                <span class = "icon-next"></span>
+            </a>
+    </div>
+    <div class="row">
+        <div id="weddings" class="col-md-4">
+            <a href="weddings.html">
+                <img class="img-responsive center-block img-rounded" src="http://eventsbyambrosia.com/wp-content/uploads/2014/10/wedding-photostock1.jpg" vspace="10">
+            </a>
+             <h3 class="text-center"><a href = "weddings.html">Weddings</a></h3>
+            <p>Here are samples of weddings I have photographed.</p>
+             <a href="weddings.html" class="btn btn-default">Wedding Gallery</a>
+        </div>
+        <div id="nature" class="col-md-4">
+            <a href="nature.html">
+                <img class="img-responsive center-block img-rounded" vspace="10" src="http://smashingpicture.com/wp-content/uploads/2011/03/alex11.jpg">
+            </a>
+             <h3 class="text-center"><a href = "nature.html">Nature</a></h3>
+            <p>Here are samples of nature shoots that I've been on.</p>
+            <a href="nature.html" class="btn btn-default">Nature Gallery</a>
+        </div>
+        <div id="cities" class="col-md-4">
+            <a href="cities.html">
+                <img class="img-responsive center-block img-rounded" vspace="10" src="http://api.ning.com/files/4uLsgpBK3A*j9I3VkhQIc-B12utHi4DBIhKbFvOkNOYqTVtZLLifOM-j8ikNtz-eeFQslqWi-ajHrdb95aJbuMcVubEvpg*Y/A2d8DdPCEAAsP_E.jpg?width=750">
+            </a>
+             <h3 class="text-center"><a href = "cities.html">Famous Cities</a></h3>
+            <p>Take a look at famous cities that I've traveled too. You will find landmarks that make each city unique. </p> 
+            <a href="cities.html" class="btn btn-default">Famous Cities</a>
+        </div>
+    </div>
+    <!------------End Contents Area---------Begin Footer Bar------------------------>
+    <div id="footer" class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <p class="navbar-text pull-right">Site built by Darryl Mendonez</p>
+        </div>
+    </div>
+    <!----------------Begin Contact Popup-------------->
+    <div id="contact-pop-up"></div>
+    <!----------------End Contact Popup-------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('.jumbotron').hide(0).fadeIn(2000)
+            $('.col-md-4').hide(0).delay(1000).slideDown(2000);
+            $('#footer').hide(0).delay(2500).show(1500);
+        });
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="js/loadrepeateddivs.js"></script>
+    <script src = "js/bootstrap-hover-dropdown.js"></script>
+    </body>
+</html>

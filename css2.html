@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+    <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+    <meta name="author" content="Darryl Mendonez used Twitter Bootstrap code by Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <title>Learn Web Design</title>
+    <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <style>
+    </style>
+</head>
+<body>
+<!----------------Begin Navbar------------------------------>
+<div id="navigation-bar"></div>
+<!-----------------------------------End Navbar-----Begin Article--------------------------------------->
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-lg-9">
+                    <div class = "panel panel-default">
+                        <div class = "panel-body">
+                            <div class = "page-header">
+                                <div class = "page-header">
+                                <h3>CSS3<img class="img-responsive pull-right" src="images/css3.png"><br>
+<small>Cascading Style Sheets is a style sheet language used for describing the look and formatting of a document written in a markup language.</small></h3>
+                            </div>
+                                <p><div class = "text-center"><h4>Chapter 2 - Color and Background</h4></div><br>
+<b>Topics covered:</b>
+    <ul>
+        <li><a href="#color">Color</a></li>
+        <li><a href="#keywords">CSS Colors: Keywords</a></li>
+        <li><a href="#rgb">CSS Color: RGB</a></li>
+        <li><a href="#hex">CSS Colors: Hex Codes</a></li>
+        <li><a href="#short">CSS Colors: Short Hex Codes</a></li>
+        <li><a href="#background">Background</a></li>
+        <li><a href="#bgcolor">Background Color</a></li>
+        <li><a href="#adding">Adding Background Color</a></li>
+        <li><a href="#bgimage">Background Image</a></li>
+        <li><a href="#repeat">Background Repeat</a></li>
+    </ul>
+<a name="color"></a><b>Color</b>
+    <ul>
+        <li>CSS is used to set a color either for the foreground of an element (i.e., its text) or for the background of an element</li>
+        <li>CSS color is either a keyword or a numerical specification</li>
+        <li>When coding CSS, you will often need to define a color for an html element</li>
+        <li>In CSS, we define a color using either the hexadecimal color code, the RGB color code, or the actual color name</li>
+        <li>A benefit of using hexadecimal and RGB color codes is that we have many more options than just supplying a color name</li>
+        <li>CSS colors are defined using a hexadecimal (hex) notation for the combination of Red, Green, and Blue color values (RGB)</li>
+        <li>The lowest value that can be given to one of the light sources is 0 (hex 00). The highest value is 255 (hex FF)</li>
+        <li>We can specify your color values in various formats</li>
+        <li>The following table tells you all possible formats:<br>
+            <table border="1" style="width:300px">
+                <tr>
+                    <td><b>Format/Syntax</b></td>
+                    <td>Example</td> 
+                </tr>
+                <tr>
+                    <td>RGB %<br>
+                        rgb(rrr%,ggg%,bbb%)</td>
+                    <td>p {color:rgb(50%,50%,50%);}</td> 
+                </tr>
+                <tr>
+                    <td>RGB<br>
+                    Absolute rgb(rrr,ggg,bbb)</td>
+                    <td>p{color:rgb(0,0,255);}
+                    </td> 
+                </tr>
+                <tr>
+                    <td>Hex Code<br>
+                    #RRGGBB</td>
+                    <td>p{color:#FF0000;}</td> 
+                </tr>
+                <tr>
+                    <td>Short Hex Code #RGB</td>
+                    <td>p{color:#6A7}</td> 
+                </tr>
+                <tr>
+                    <td>Keyword<br>
+                    aqua, black, etc</td>
+                    <td>p{color:teal;}</td> 
+                </tr>
+            </table></li>
+    </ul>    
+<a name="keywords"></a><b>CSS Colors: Keywords</b>
+    <ul>
+        <li>Color keywords are exactly a list of word that correspond to colors on a web page</li>
+        <li>Examples: aqua, black, fuchsia, gray, green, lime, maroon, navy, olive,purple, red, silver, teal, white, yellow</li>
+    </ul>
+<a name="rgb"></a><b>CSS Color: RGB</b>
+    <ul>
+        <li>This color value is used to specify the rgb () property</li>
+        <li>This property takes three values, red, green, and blue</li>
+        <li>The value can be an integer between 0 and 255 or a percentage</li>
+        <li>The following table shows a few colors using the RGB values:<br>
+<br>
+            <img class="img-responsive" src="https://googledrive.com/host/0B5kZdBK1QTn1NGJJQmc3UjFXa1E/rgb.png">
+        </li>
+    </ul>
+<a name="hex"></a><b>CSS Colors: Hex Codes</b>
+            <ul>
+                <li>A hex code is a 6 digit representation of a color starting with a # symbol</li>
+                <li>The first two digits (RR) are used to represent a red value, the next two digits are a green value (GG), and the last are the blue value (BB)</li>
+                <li>The lowest value that can be used for one of the light sources is 0 (hex 00). The highest value is 255 (hex FF)</li>
+                <li>The following table shows a few colors using Hex code notation:<br>
+<br>
+                <img class="img-responsive" src="https://googledrive.com/host/0B5kZdBK1QTn1NGJJQmc3UjFXa1E/rgbhex.png">
+                </li>
+                <li>You can find a list of Hex Codes from <a href="http://en.wikipedia.org/wiki/Web_colors" target="blank">Wikipedia</a></li>
+            </ul>
+<a name="short"></a><b>CSS Colors: Short Hex Codes</b>
+    <ul>
+        <li>Short hex code is a shorter form of the six-digit notation starting with the # symbol</li>
+        <li>In this format each digit is replicated to arrive at an equivalent six-digit value; for example #6A7 becomes #66AA77</li>
+        <li>The following table shows a few colors using short hex code notation:<br>
+<br>
+            <img class="img-responsive" src="https://googledrive.com/host/0B5kZdBK1QTn1NGJJQmc3UjFXa1E/rgbshorthex.png">
+        </li>
+        <li>You can find a list of Short Hex Codes from <a href="http://en.wikipedia.org/wiki/Web_colors" target="blank">Wikipedia</a></li>
+    </ul>
+<a name="background"></a><b>Background</b>    
+    <ul>
+        <li>To define the background of an element we use the CSS background property</li>
+        <li>The background property is used to specify a number of other background properties</li>
+        <li>CSS properties used for background effects:</li>
+            <ul>
+                <li>background-color</li>
+                <li>background-image</li>
+                <li>background-repeat</li>
+                <li>background-attachment</li>
+                <li>background-position</li>
+            </ul>
+    </ul>
+<a name="bgcolor"></a><b>Background Color</b>
+    <ul>
+        <li>To set the background-color of an element we use background-color property</li>
+        <li>The background-color property specifically declares a color for the background of an element</li>
+        <li>Syntax:</li>
+            <ul>
+                <li>background-color: &lt;color> | transparent | inherit</li>
+                    <ul>
+                        <li>&lt;color> - defines the color of the background</li>
+                        <li>transparent - takes the same color as the element below it. It is the initial value of background-color</li>
+                        <li>inherit - the element should have the same background-color setting as the parent. This property is not inherited</li>
+                        <li>Example:<br>
+                        &lt;html><br>
+		                &lt;head>&lt;style><br>
+					    body<br>
+					    {<br>
+					    background-color:#b0c4de;<br>
+					    }<br>
+					    &lt;/style>&lt;/head><br>
+					    &lt;body><br>
+					    &lt;h1>CSS background-color Example&lt;/h1><br>
+					    &lt;p>This is a sentence.&lt;/p><br>
+					    &lt;/body><br>
+					    &lt;/html><br>
+                        </li>
+                    </ul>
+            </ul>
+    </ul>
+<a name="adding"></a><b>Adding Background Color</b>
+    <p>Within a tag, such as div, you can add the attribute style and type in a color using the name or the hex code for it. That will give that section of your webpage a background of your choosing.<br>
+        Example: &lt;div style="background:yellow">&lt;p>Text to have a background color&lt;/p>&lt;/div><br>
+        Output: <div style="background:yellow"><p>Text to have a background color</p></div><br>
+        Notice how the background goes all the way through the page horizontally. If you want the background color to cover a shorter width (or even height) use css to define exactly what you want to have the background color.<br>
+        Example: &lt;div style="background:yellow;width:100px;height:100px">&lt;p>Text to have a background color&lt;/p>&lt;/div><br>
+        Output: <div style="background:yellow;width:100px;height:75px"><p>Text to have a background color</p></div><br>
+    </p>
+<a name="bgimage"></a><b>Background Image</b>
+    <ul>
+        <li>To set the background image of an element we use background-image property</li>
+        <li>The background-image property is used to add the background image of an element</li>
+        <li>background-image is the same as background-color, but it uses an image you specify instead of a color</li>
+        <li>CSS is used to set a background image for both the page and single elements on the page</li>
+        <li>background-image applies to all elements</li>
+        <li>Values for background image property are either ‘url’, to specify the image or ‘none’, when no image is used</li>
+        <li>Syntax:</li>
+            <ul>
+                <li>background-image: &lt;url> | none | inherit</li>
+                <li>&lt;url> - the path to the image used as the background</li>
+                <li>none - no background image should display. It is the initial value of background image</li>
+                <li>inherit - the element should have the same background-image setting as the parent. This property is not inherited</li>
+                <li>Example:<br>    
+                &lt;html><br>
+		        &lt;head>&lt;style><br>
+		        body<br>
+		        {<br>
+		        background-image:url(‘picture.png’);<br>
+		        }<br>
+		        &lt;/style>&lt;/head><br>
+		        &lt;body><br>
+		        &lt;h1>Background Image Example&lt;/h1><br>
+		        &lt;/body><br>
+		        &lt;/html></li>
+            </ul>
+    </ul>
+<a name="repeat"></a><b>Background Repeat</b>
+    <ul>
+        <li>To control the repetition of an image in the background we use background-repeat property</li>
+        <li>The background-repeat property is used to define the background image of an element</li>
+        <li>The background-repeat applies to all elements</li>
+        <li>Syntax:</li>
+            <ul>
+                <li>background-repeat: repeat | repeat-x | repeat-y | no-repeat | inherit</li>
+                <li>repeat</li>
+                    <ul>
+                        <li>used to display the background image horizontally and vertically</li>
+                        <li>It is the initial value of background image</li>
+                        <li>Example:<br>
+                        &lt;html><br>
+				        &lt;head>&lt;style><br>
+				        body<br>
+				        {<br>
+				        background-image:url(‘picture.png’);<br>
+				        background-repeat:repeat;<br>
+                        }<br>
+                        &lt;/style>&lt;/head><br>
+                        &lt;body><br>
+                        &lt;h1>Background Image Repeat Example&lt;/h1><br>
+                        &lt;/body><br>
+                        &lt;/html></li>
+                    </ul>
+                <li>repeat-x</li>
+                    <ul>
+                        <li>It is used to display the background image horizontally</li>
+                        <li>Example:<br>    
+                        &lt;html><br>
+				        &lt;head>&lt;style><br>
+				        body<br>
+				        {<br>
+				        background-image:url(‘picture’);<br>
+				        background-repeat:repeat-x;<br>
+				        }<br>
+				        &lt;/style>&lt;/head><br>
+				        &lt;body><br>
+				        &lt;h1>Background Image Repeat Example in x-axis&lt;/h1><br>
+				        &lt;/body><br>
+				        &lt;/html></li>
+                    </ul>
+                <li>repeat-y</li>
+                    <ul>
+                        <li>It is used to display the background image vertically</li>
+                        <li>Example:<br>
+                        &lt;html><br>
+				        &lt;head>&lt;style><br>
+				        body<br>
+				        {<br>
+				        background-image:url(‘picture’);<br>
+				        background-repeat:repeat-y;<br>
+				        }<br>
+				        &lt;/style>&lt;/head><br>
+				        &lt;body><br>
+				        &lt;h1>Background Image Repeat Example in y-axis&lt;/h1><br>
+				        &lt;/body><br>
+				        &lt;/html></li>
+                    </ul>
+                <li>no-repeat</li>
+                    <ul>
+                        <li>It is used to display the background image only once, no repetition of an image</li>
+                        <li>Example:<br>
+                        &lt;html><br>
+				        &lt;head>&lt;style><br>
+				        body<br>
+				        {<br>
+				        background-image:url(‘picture’);<br>
+				        background-repeat:no-repeat;<br>
+				        }<br>
+				        &lt;/style>&lt;/head><br>
+				        &lt;body><br>
+				        &lt;h1>Background Image Repeat Example in x-axis&lt;/h1><br>
+				        &lt;/body><br>
+				        &lt;/html></li>
+                    </ul>
+                <li>Inherit</li>
+                    <ul>
+                        <li>The element should have the same background-repeat setting as the parent</li>
+                        <li>This property is not inherited</li>
+                    </ul>     
+            </ul>
+    </ul>      
+</p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                <div class = "col-lg-3">
+                        <div class = "list-group">
+                            <a href = "https://googledrive.com/host/0B5kZdBK1QTn1amM4clB3Vng0SlU/css1.html" class = "list-group-item" >
+                                <h4 class = "list-group-item-heading">Chapter 1 - Introduction to CSS</h4>
+                                <p class = "list-group-item-text"><b>Topics Covered:</b>
+                                    <ul>
+                                        <li>What is CSS?</li>
+                                        <li>Type of CSS</li>
+                                        <li>History</li>
+                                        <li>Uses</li>
+                                        <li>The Benefits</li>
+                                        <li>Disadvantages</li>
+                                        <li>How Does CSS Work?</li>
+                                        <li>Watch: Learn HTML and CSS in 30 Minutes</li>
+                                        <li>Common CSS Properties and Values</li>
+                                    </ul>
+                                </p>
+                            </a>
+                            <a href = "https://googledrive.com/host/0B5kZdBK1QTn1amM4clB3Vng0SlU/css2.html" class = "list-group-item active">
+                                <h4 class = "list-group-item-heading">Chapter 2 - Colors and Background</h4>
+                                <p class = "list-group-item-text"><b>Topics Covered:</b>
+                                    <ul>
+                                        <li>Color</li>
+                                        <li>CSS Colors: Keywords</li>
+                                        <li>CSS Color: RGB</li>
+                                        <li>CSS Colors: Hex Codes</li>
+                                        <li>CSS Colors: Short Hex Codes</li>
+                                        <li>Background</li>
+                                        <li>Background Color</li>
+                                        <li>Background Image</li>
+                                        <li>Background Repeat</li>
+                                    </ul>
+                                </p>
+                            </a>
+                            <a href = "css3.html" class = "list-group-item">
+                                <h4 class = "list-group-item-heading">Chapter 3 - CSS Video Tutorials</h4>
+                                <p class = "list-group-item-text"><b>Topics Covered:</b>
+                                    <ul>
+                                        <li>9. Watch: Introduction to CSS</li>
+                                        <li>10. Watch: Stylying Text with CSS</li>
+                                        <li>11. Watch: Divs and Styling</li>
+                                        <li>12. Watch: Margins and Paddings</li>
+                                        <li>13. Watch: ID's and Classes</li>
+                                        <li>14. Watch: Removing Browser Border</li>
+                                        <li>15. Watch: CSS Float Property</li>
+                                        <li>16. Watch: CSS Hover Over Properties</li>
+                                        <li>17. Watch: Styling Link States</li>
+                                        <li>18. Watch: Absolute Positioning</li>
+                                        <li>19. Watch: Build a Full HTML Site Layout</li>
+                                    </ul>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <br>
+       <div class = "navbar navbar-default navbar-fixed-bottom">
+           <div class = "container">
+               <p class = "navbar-text pull-right">Site built by Darryl Mendonez</p>
+           </div>
+       </div>
+       <!----------------Begin Contact Popup-------------->
+        <div id="contact-pop-up"></div>
+        <!----------------End Contact Popup-------------->
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/loadrepeateddivs.js"></script>
+        <script src = "js/bootstrap.js"></script>
+        <script src = "js/bootstrap-hover-dropdown.js"></script>
+    </body>
+</html>

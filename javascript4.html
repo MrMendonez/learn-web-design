@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+    <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+    <meta name="author" content="Darryl Mendonez used Twitter Bootstrap code by Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <title>&lt;/Web Design></title>
+    <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <style>
+    </style>
+</head>
+<body>
+<!----------------Begin Navbar------------------------------>
+<div id="navigation-bar"></div>
+<!-----------------------------------End Navbar-----Begin Article--------------------------------------->
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-lg-9">
+                    <div class = "panel panel-default">
+                        <div class = "panel-body">
+                            <div class = "page-header">
+                                <div class = "page-header">
+                                <h3>JavaScript<img class="img-responsive pull-right" src="images/js.png"><br>
+<small>JavaScript is a dynamic computer programming language commonly used as part of web browsers whose implementations allow client-side scripts to interact with the user. It is also used in game development and in the creation of desktop and mobile applications.</small></h3>
+                            </div>
+                                <p><div class = "text-center"><h4>Chapter 4 - The DRY Principle with jQuery</h4></div><br>
+                                <b>The DRY Principle - Don't Repeat Yourself</b>
+                                The DRY Priciple, which stands for Don't Repeat Yourself, is a principle used in computer science. Essentially, you do not want to have code that repeats itself. For instance, when making a web page the code for your navigation bar may repeat itself on every single web page you have for your site. This could lead to problems if you want to make a change to your navigation bar. If you want to add a new menu button on your navigation bar then you would have to go to every html file you have to add that line or lines of code. This can be very cumbersome if you have many web pages to update. By using jQuery - a JavaScript library - you can code your navigation bar once on a seperate html file and call it using a div id. That way when you make a change to your navbar you only have to change it once and it will be applied to all your web pages. It is the same idea as using an external CSS file. The following video will show you how to apply the DRY Principle to your navigation bar on your website.
+                                </p>
+                                <p><b>Watch: How to Code Navbar Once for your Website by Mr. Mendonez</b></p>
+                                <div class="video-container">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BZKJvmTi6TY" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                <div class = "col-lg-3">
+                    <div class = "list-group">
+                        <a href = "javascript1.html" class = "list-group-item">
+                            <h4 class = "list-group-item-heading">Chapter 1 - Introduction to JavaScript</h4>
+                            <p class = "list-group-item-text"><b>Topics Covered:</b>
+                                <ul>
+                                    <li>Introduction to JavaScript</li>
+                                    <li>Uses of JavaScript</li>
+                                    <li>Where to Use JavaScript</li>
+                                    <li>Advantages of JavaScript</li>
+                                    <li>Disadvantages of JavaScript</li>
+                                    <li>Simple Example of JavaScript Program</li>
+                                </ul>
+                            </p>
+                        </a>
+                        <a href = "javascript2.html" class = "list-group-item">
+                            <h4 class = "list-group-item-heading">Chapter 2 - JavaScript Statements I</h4>
+                            <p class = "list-group-item-text"><b>Topics Covered:</b>
+                                <ul>
+                                    <li>JavaScripts Statements</li>
+                                    <li>Types of Statements</li>
+                                    <li>Variable Declaration Statements</li>
+                                    <li>Conditional Statements</li>
+                                    <li>Looping Statements</li>
+                                </ul>
+                            </p>
+                        </a>
+                        <a href = "javascript3.html" class = "list-group-item">
+                            <h4 class = "list-group-item-heading">Chapter 3 - JavaScript Video Tutorials</h4>
+                            <p class = "list-group-item-text"><b>Topics Covered:</b>
+                                <ul>
+                                    <li>1. Watch: Creating an HTML File</li>
+                                    <li>2. Watch: Alerting the User</li>
+                                    <li>3. Watch: Variables</li>
+                                    <li>4. Watch: Math Functions</li>
+                                </ul>
+                            </p>
+                        </a>
+                        <a href = "javascript4.html" class = "list-group-item active">
+                            <h4 class = "list-group-item-heading">Chapter 4 - The DRY Principle with jQuery</h4>
+                            <p class = "list-group-item-text"><b>Topics Covered:</b>
+                                <ul>
+                                    <li>Introduction to The DRY Principle</li>
+                                    <li>Watch: DRY Principle - How to Code Nav Bar Once for your Website by Mr. Mendonez</li>
+                                </ul>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!------------------Begin Footer Bar--------------------------------->
+        <br>
+       <div class = "navbar navbar-default navbar-fixed-bottom">
+           <div class = "container">
+               <p class = "navbar-text pull-right">Site built by Darryl Mendonez</p>
+           </div>
+       </div>
+       <!----------------Begin Contact Popup-------------->
+        <div id="contact-pop-up"></div>
+        <!----------------End Contact Popup-------------->
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/loadrepeateddivs.js"></script>
+        <script src = "js/bootstrap.js"></script>
+        <script src = "js/bootstrap-hover-dropdown.js"></script>
+    </body>
+</html>

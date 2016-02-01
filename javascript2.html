@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+    <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+    <meta name="author" content="Darryl Mendonez used Twitter Bootstrap code by Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <title>&lt;/Web Design></title>
+    <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <style>
+    </style>
+</head>
+<body>
+<!----------------Begin Navbar------------------------------>
+<div id="navigation-bar"></div>
+<!-----------------------------------End Navbar-----Begin Article--------------------------------------->
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-lg-9">
+                    <div class = "panel panel-default">
+                        <div class = "panel-body">
+                            <div class = "page-header">
+                                <div class = "page-header">
+                                <h3>JavaScript<img class="img-responsive pull-right" src="images/js.png"><br>
+<small>JavaScript is a dynamic computer programming language commonly used as part of web browsers whose implementations allow client-side scripts to interact with the user. It is also used in game development and in the creation of desktop and mobile applications.</small></h3>
+                            </div>
+                                <div class = "text-center">
+                                    <h4>Chapter 2 - JavaScripts Statements I</h4>
+                                </div>
+                                <br>
+                                <p>
+                                    <b>Topics covered:</b>
+                                        <ul>
+                                            <li><a href="#statements">JavaScripts Statements</a></li>
+                                            <li><a href="#types">Types of Statements</a></li>
+                                            <li><a href="#variable">Variable Declaration Statements</a></li>
+                                            <li><a href="#conditional">Conditional Statements</a></li>
+                                            <li><a href="#looping">Looping Statements</a></li>
+                                        </ul>
+                                    <a name="statements"></a><b>JavaScript Statements</b>
+                                        <ul>
+                                            <li>JavaScript supports a compact set of statements that can be used for interactivity in web pages</li>
+                                            <li>A statement can set a variable equal to a value</li>
+                                            <li>Statements define what the script will do and how it will be done</li>
+                                            <li>A statement can also be a function call, i.e. document.write()</li>
+                                            <li>JavaScript program is controlled by statements, which are executed for their effect and do not have values</li>
+                                        </ul>
+                                    <a name="types"></a><b>Type of Statements</b>
+                                        <ul>
+                                            <li>JavaScript statements are divided into six categories</li>
+                                                <ul>
+                                                    <li>Variable Declaration Statement</li>
+                                                    <li>Conditional Statement</li>
+                                                    <li>Loop Statement</li>
+                                                    <li>Object Manipulation Statement</li>
+                                                    <li>Comment Statement</li>
+                                                    <li>Expectation Handling Statement</li>
+                                                </ul>
+                                        </ul>
+                                    <a name="variable"></a><b>Variable Declaration Statements</b>
+                                        <ul>
+                                            <li>In JavaScript keyworkd "var" is used to declare a variable. There is no specific data type in JavaScript so any variable is created using var.</li>
+                                                <ul>
+                                                    <li><b>Syntax</b> - refers to the spelling and grammer of a programming language. Computers are inflexible machines that understand what you type only if you type it in the exact form that the computer expects.</li>
+                                                </ul>    
+                                            <li>Syntax:<br>
+                                            var variable1;//the name of the variable being declared.</li>
+                                                <ul>
+                                                    <li>Example:<br>
+                                                    &lt;HEAD><br>
+                                                    &lt;script type="text/Javascript"><br>
+                                                    var money;<br>
+                                                    var name;<br>
+                                                    &lt;/script><br>
+                                                    &lt;/HEAD></li>
+                                                </ul>
+                                        </ul>
+                                    <a name="conditional"></a><b>Conditional Statements</b><br>
+                                    Conditional statements are divided into the following categories:
+                                        <ol>
+                                            <li>if Statement</li>
+                                                <ol type="a">
+                                                    <li>an if statement executes a statement if a logical condition is true<br>
+                                                    Syntax:<br>
+                                                    if (condition)<br>
+                                                    {<br>
+                                                    code to be executed if condition is true<br>
+                                                    }<br>
+                                                    <br>
+                                                    Example:<br>
+                                                    &lt;script type="text/javascript"><br>
+                                                    if (income>100000)<br>
+                                                    {<br>
+                                                    alert ('We can offer you a special benefit.');
+                                                    &lt;/script></li>
+                                                </ol>
+                                            <li>if... else Statement:</li>
+                                                <ul>
+                                                    <li>Use if... else statement to execute some code if a condition is true and another code if the condition is false.</li>
+                                                    <li>Syntax:<br>
+                                                    if (condition)<br>
+                                                    {<br>
+                                                    code to be executed if condition is true<br>
+                                                    }<br>
+                                                    else<br>
+                                                    {<br>
+                                                    code to be executed if condition is not true<br>
+                                                    }</li>
+                                                    <li>Example:<br>
+                                                    &lt;script type="text/javascript">if(marks<20)<br>
+                                                    {
+                                                    x="poor performance";
+                                                    }
+                                                    else
+                                                    {
+                                                    x="average performance";
+                                                    }
+                                                    &lt;/script>
+                                                    </li>
+                                                </ul>
+                                            <li>if... else if... else Statement</li>
+                                                <ul>
+                                                    <li>Use if... else if... else statement to select one of several blocks of code to be executed</li>
+                                                    <li>Syntax<br>
+                                                    if (condition 1)<br>
+                                                    {<br>
+                                                    code to be executed if condition 1 is true<br>
+                                                    }<br>
+                                                    else if (condition 2)<br>
+                                                    {<br>
+                                                    code to be executed if condition 2 is true<br>
+                                                    }<br>
+                                                    else<br>
+                                                    {<br>
+                                                    code to be executed if condition 1 and condition 2 are not true<br>
+                                                    }</li>
+                                                    <li>Example:<br>
+                                                    &lt;script type="text/javascript">if(marks<10)<br>
+                                                    {<br>
+                                                    x="fail";<br>
+                                                    }<br>
+                                                    else if(marks<20)<br>
+                                                    {
+                                                    x="poor";
+                                                    }
+                                                    else
+                                                    {
+                                                    x="good";
+                                                    }
+                                                    &lt;/script></li>
+                                                </ul>
+                                        </ol>
+                                    <a name="looping"></a><b>Looping Statements</b>
+                                        <ul>
+                                            <li>Loop statements are divided into the following categories:</li>
+                                        </ul>
+                                        <ol>
+                                            <li>for Statement:</li>
+                                                <ul>
+                                                    <li>for statement includes the following important points:</li>
+                                                        <ul>
+                                                            <li>Loop intialization: where we intialize our counter to a starting value</li>
+                                                            <li>Test statement: which will test whether the given condition is true or not. Test result will determine whether loop will continue or terminate</li>
+                                                            <li>The iteration statement: where you can increase or decrease your counter</li>
+                                                        </ul>
+                                                    <li>Syntax:<br>
+                                                    for (initilization; test condition; iteration statement)<br>
+                                                    {<br>
+                                                    Statement to be executed if test condition is true<br>
+                                                    }</li>
+                                                    <li>Example:<br>
+                                                    &lt;script type="text/javascript"><br>
+                                                    for (var i=0; i&lt;=9; i++)<br>
+                                                    {<br>
+                                                    document.write(i);<br>
+                                                    document.write(" ");<br>
+                                                    }<br>
+                                                    &lt;/script><br></li>
+                                                    <li>Output:<br>
+                                                    0 1 2 3 4 5 6 7 8 9
+                                                    </li>
+                                                    </li>
+                                                </ul>
+                                            <li>while Statement:</li>
+                                                <ul>
+                                                    <li>It executes a statement or series of statements until a specified condition is false.</li>
+                                                    <li>Syntax:<br>
+                                                        while (expression)<br>
+                                                        {<br>
+                                                        Statement to be executed if expression is true<br>
+                                                        }</li>
+                                                    <li>Example:<br>
+                                                        &lt;script type="text/javascript"><br>
+                                                        var i=0;<br>
+                                                        var j=10;<br>
+                                                        while (i&lt;100)<br>
+                                                        {<br>
+                                                        if (==j)<br>
+                                                        break;<br>
+                                                        i++;<br>
+                                                        }<br>
+                                                        document.write(i);<br>
+                                                        &lt;/script><br></li>
+                                                        <li>Output:<br>
+                                                            10</li>
+                                                </ul>
+                                            <li>do... while Statement:</li>
+                                                <ul>
+                                                    <li>It executes a statement block once, and then repeats execution of the loop until a condition expression evaluates to be false.</li>
+                                                    <li>Syntax<br>
+                                                        do<br>
+                                                        {<br>
+                                                        Statement;<br>
+                                                        }<br>
+                                                        while (expression);</li>
+                                                    <li>Example:<br>
+                                                        &lt;script type="text/javascript"><br>
+                                                        var i=0;<br>
+                                                        do<br>
+                                                        {<br>
+                                                        document.write(i+"");<br>
+                                                        i++;<br>
+                                                        }<br>
+                                                        while(i&lt;10;<br>
+                                                        &lt;/script></li>
+                                                    <li>Output:<br>
+                                                        0 1 2 3 4 5 6 7 8 9</li>
+                                                </ul>
+                                            <li>Label Statement:</li>
+                                                <ul>
+                                                    <li>A label is simply an identifier followed by a colon that is applied to a statement or block of code.</li>
+                                                    <li>Syntax:<br>
+                                                        Label:<br>
+                                                        &nbsp;&nbsp;&nbsp;Statements;</li>
+                                                    <li>Example:<br>
+                                                        &lt;script type="text/javascript">
+                                                        Outer:<br>
+                                                        for (i=1; i&lt;=10; i++)<br>
+                                                        {<br>
+                                                        document.write("&lt;br>");<br>
+                                                        document.write("i:"+i);<br>
+                                                        document.write("j:");<br>
+                                                        Inner:<br>
+                                                        for(j=21;j&lt=30;j++)<br>
+                                                        {<br>
+                                                        if(j==24)<br>
+                                                        {<br>
+                                                        continue Inner;<br>
+                                                        }<br>
+                                                        document.write(j+"");<br>
+                                                        }<br>
+                                                        }<br>
+                                                        &lt;/script></li>
+                                                    <li>Output:<br>
+                                                        i: 1 j: 21 22 23 25 26 27 28 29 30<br>
+                                                        i: 2 j: 21 22 23 25 26 27 28 29 30<br>
+                                                        i: 3 j: 21 22 23 25 26 27 28 29 30<br>
+                                                        i: 4 j: 21 22 23 25 26 27 28 29 30<br>
+                                                        i: 5 j: 21 22 23 25 26 27 28 29 30<br>
+                                                        i: 6 j: 21 22 23 25 26 27 28 29 30<br>
+                                                        i: 7 j: 21 22 23 25 26 27 28 29 30<br>
+                                                        i: 8 j: 21 22 23 25 26 27 28 29 30<br>
+                                                        i: 9 j: 21 22 23 25 26 27 28 29 30<br>
+                                                        i: 10 j: 21 22 23 25 26 27 28 29 30</li>
+                                                </ul>
+                                            <!-- <li>Break Statement:</li> -->
+                                                    <!--File Not Finished! Continue as soon as possible!-->
+                                        </ol>
+                                                </ol>
+                                        </ol>
+                                </p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                <div class = "col-lg-3">
+                    <div class = "list-group">
+                        <a href = "javascript1.html" class = "list-group-item">
+                            <h4 class = "list-group-item-heading">Chapter 1 - Introduction to JavaScript</h4>
+                            <p class = "list-group-item-text"><b>Topics Covered:</b>
+                                <ul>
+                                    <li>Introduction to JavaScript</li>
+                                    <li>Uses of JavaScript</li>
+                                    <li>Where to Use JavaScript</li>
+                                    <li>Advantages of JavaScript</li>
+                                    <li>Disadvantages of JavaScript</li>
+                                    <li>Simple Example of JavaScript Program</li>
+                                </ul>
+                            </p>
+                        </a>
+                        <a href = "javascript2.html" class = "list-group-item active">
+                            <h4 class = "list-group-item-heading">Chapter 2 - JavaScript Statements I</h4>
+                            <p class = "list-group-item-text"><b>Topics Covered:</b>
+                                <ul>
+                                    <li>JavaScripts Statements</li>
+                                    <li>Types of Statements</li>
+                                    <li>Variable Declaration Statements</li>
+                                    <li>Conditional Statements</li>
+                                    <li>Looping Statements</li>
+                                </ul>
+                            </p>
+                        </a>
+                        <a href = "javascript3.html" class = "list-group-item">
+                            <h4 class = "list-group-item-heading">Chapter 3 - JavaScript Video Tutorials</h4>
+                            <p class = "list-group-item-text"><b>Topics Covered:</b>
+                                <ul>
+                                    <li>1. Watch: Creating an HTML File</li>
+                                    <li>2. Watch: Alerting the User</li>
+                                    <li>3. Watch: Variables</li>
+                                    <li>4. Watch: Math Functions</li>
+                                </ul>
+                            </p>
+                        </a>
+                        <a href = "javascript4.html" class = "list-group-item">
+                            <h4 class = "list-group-item-heading">Chapter 4 - The DRY Principle with jQuery</h4>
+                            <p class = "list-group-item-text"><b>Topics Covered:</b>
+                                <ul>
+                                    <li>Introduction to The DRY Principle</li>
+                                    <li>Watch: DRY Principle - How to Code Nav Bar Once for your Website by Mr. Mendonez</li>
+                                </ul>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+       <div class = "navbar navbar-default navbar-fixed-bottom">
+           <div class = "container">
+               <p class = "navbar-text pull-right">Site built by Darryl Mendonez</p>
+           </div>
+       </div>
+       <!----------------Begin Contact Popup-------------->
+        <div id="contact-pop-up"></div>
+        <!----------------End Contact Popup-------------->
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/loadrepeateddivs.js"></script>
+        <script src = "js/bootstrap.js"></script>
+        <script src = "js/bootstrap-hover-dropdown.js"></script>
+    </body>
+</html>

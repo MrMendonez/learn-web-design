@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+
+        <title>Web Design</title>
+    <!-- Bootstrap -->            
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "css/bootstrap.min.css" rel = "stylesheet">
+    <link href = "css/styles.css" rel = "stylesheet"> 
+        <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    </head>
+    <body>
+        
+        <div class = "navbar navbar-default navbar-static-top">
+            <div class = "container">
+                
+                <a href = "https://googledrive.com/host/0B5kZdBK1QTn1amM4clB3Vng0SlU/index.html" class = "navbar-brand">Web Design</a>
+                
+                <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+                </button>
+                
+                <div class = "collapse navbar-collapse  navHeaderCollapse">
+                    <ul class = "nav navbar-nav navbar-right">
+                      <li class = "active"><a href = "https://googledrive.com/host/0B5kZdBK1QTn1amM4clB3Vng0SlU/index.html">Home</a></li>
+                      <li><a href = "https://googledrive.com/host/0B5kZdBK1QTn1amM4clB3Vng0SlU/gettingstarted.html">Getting Started</a></li>
+                      <li class = "dropdown">
+                        <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">HTML5<b class = "caret"></b></a>
+                        <ul class = "dropdown-menu">
+                          <li><a href = "https://googledrive.com/host/0B5kZdBK1QTn1amM4clB3Vng0SlU/html5_1.html">Introduction to HTML5</a></li>
+                          <li><a href = "https://googledrive.com/host/0B5kZdBK1QTn1amM4clB3Vng0SlU/html5_2.html">HTML5 Basics</a></li>
+                        </ul>
+                        </li>
+                        <li class = "dropdown">
+                            <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">CSS<b class = "caret"></b></a>
+                        <ul class = "dropdown-menu">
+                          <li><a href = "https://googledrive.com/host/0B5kZdBK1QTn1amM4clB3Vng0SlU/css1.html">Introduction to CSS</a></li>
+                          <li><a href = "https://googledrive.com/host/0B5kZdBK1QTn1amM4clB3Vng0SlU/css2.html">Color and Background I</a></li>
+                        </ul>
+                        </li>
+                        <li class = "dropdown">
+                            <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">JavaScript<b class = "caret"></b></a>
+                                <ul class = "dropdown-menu">
+                                    <li><a href = "https://googledrive.com/host/0B5kZdBK1QTn1amM4clB3Vng0SlU/javascript1.html">Introduction to JavaScript</a></li>
+                                    <li><a href = "https://googledrive.com/host/0B5kZdBK1QTn1amM4clB3Vng0SlU/javascript2.html">JavaScript Statements I</a></li>
+                                </ul>
+                            </li>
+                        <li><a href = "https://googledrive.com/host/0B5kZdBK1QTn1amM4clB3Vng0SlU/twitterbootstrap1.html">Twitter Bootstrap</a></li>
+                        <li><a href = "https://googledrive.com/host/0B5kZdBK1QTn1amM4clB3Vng0SlU/appendix1.html">Appendix</a></li>
+                        <li><a href = "#contact" data-toggle="modal">Contact</a></li>
+                    </ul>     
+                </div>
+            </div>
+        </div>
+        <!-------Carousel------------------------------------------------------------>
+        <div class="container">    
+        <div id="carousel-example-generic" class="carousel slide " >
+        
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/slide1.jpg" style="height: 100%; width: 100%; ">
+        <div class="container"> 
+        <div class="carousel-caption ">
+        <h1>Web Design</h1>
+            <h4>"HTML5, the new web standard that has been adopted by Apple, Google, and many others, lets web developers create advanced graphics, typography, animations, and transitions without relying on third party browser plug-ins."</h4>
+            <h4>-Steve Jobs<a href="http://www.apple.com/hotnews/thoughts-on-flash/" target = "blank">*</a></h4>
+            
+        </div>
+        </div>
+    </div>
+    
+      
+    <div class="item">
+      <img src="images/slide2.jpg" style="height: 100%; width: 100%; ">
+        <div class="container"> 
+        <div class="carousel-caption ">
+        <h1>Web Design</h1>
+           <h4>"No masterpiece was ever created by a lazy artist."</h4>
+                <h4>-Salvador Dali</h4> 
+      </div>
+      </div>
+    </div>
+
+      
+    <div class="item">
+      <img src="images/slide3.jpg" style="height: 100%; width: 100%; ">
+        <div class="container"> 
+        <div class="carousel-caption ">
+        <h1>Web Design</h1>
+                <h4>This class is designed to provide students with a thorough understanding of HTML5, CSS, JavaScript, and Twitter Bootstrap which are essential in the development of high-end, interactive web sites</h4>
+      </div>
+      </div>
+    </div>
+    </div>  
+
+  <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>  
+  </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+</div>        
+     
+        <!-------End Of Carousel----------------------------------------------------->
+            <div class = "container ">
+                <div class = "row">
+                    <div class = "col-md-4">
+                        <h3><a href = "https://googledrive.com/host/0B5kZdBK1QTn1amM4clB3Vng0SlU/gettingstarted.html">Getting Started</a></h3>
+                        <p>Here you will learn to develop an easy, fast, and fun workflow to help you design your webpage from any internet-connected computer with no proprietary software all for free.</p>
+                        <a href = "https://googledrive.com/host/0B5kZdBK1QTn1amM4clB3Vng0SlU/gettingstarted.html" class = "btn btn-default">Learn More</a>
+                    </div>
+                    <div class = "col-md-4">
+                        <h3><a href = "https://googledrive.com/host/0B5kZdBK1QTn1amM4clB3Vng0SlU/html5_1.html">HTML5</a></h3>
+                        <p>HTML5 is a markup language used for structuring and presenting content for the Internet and it aims  to improve the language with support for the latest multimedia while keeping it easily readable by humans and consistently understood by computers and devices.</p>
+                        <a href = "https://googledrive.com/host/0B5kZdBK1QTn1amM4clB3Vng0SlU/html5_1.html" class = "btn btn-default">Learn More</a>
+                    </div>
+                    <div class = "col-md-4">
+                        <h3><a href = "https://googledrive.com/host/0B5kZdBK1QTn1amM4clB3Vng0SlU/css1.html">CSS</a></h3>
+                        <p>Cascading Style Sheets is a style sheet language used for describing the look and formatting of a document written in a markup language.</p>
+                        <a href = "https://googledrive.com/host/0B5kZdBK1QTn1amM4clB3Vng0SlU/css1.html" class = "btn btn-default">Learn More</a>
+                    </div>
+                </div>
+            </div><br><br>
+            <div class = "container">
+                <div class = "row">
+                    <div class = "col-md-4">
+                        <h3><a href = "https://googledrive.com/host/0B5kZdBK1QTn1amM4clB3Vng0SlU/javascript1.html">JavaScript</a></h3>
+                        <p>JavaScript is a dynamic computer programming language commonly used as part of web browsers whose implementations allow client-side scripts to interact with the user. It is also used in game development and in the creation of desktop and mobile applications.</p>
+                        <a href = "https://googledrive.com/host/0B5kZdBK1QTn1amM4clB3Vng0SlU/javascript1.html" class = "btn btn-default">Learn More</a>
+                    </div>
+                    <div class = "col-md-4">
+                        <h3><a href = "https://googledrive.com/host/0B5kZdBK1QTn1amM4clB3Vng0SlU/twitterbootstrap1.html">Twitter Bootstrap</a></h3>
+                        <p>Twitter Bootstrap is a free collection of tools for creating websites and web applications. It contains HTML and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions.</p>
+                        <a href = "https://googledrive.com/host/0B5kZdBK1QTn1amM4clB3Vng0SlU/twitterbootstrap1.html" class = "btn btn-default">Learn More</a>
+                    </div>
+                    <div class = "col-md-4">
+                        <h3><a href = "https://googledrive.com/host/0B5kZdBK1QTn1amM4clB3Vng0SlU/appendix1.html">Appendix</a></h3>
+                        <p>Here you will find helpful tables of code for you to refer to as you develop your web pages.</p>
+                        <a href = "https://googledrive.com/host/0B5kZdBK1QTn1amM4clB3Vng0SlU/appendix1.html" class = "btn btn-default">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class = "navbar navbar-default navbar-fixed-bottom">
+           
+           <div class = "container">
+               <p class = "navbar-text pull-left">Site built by Darryl Mendonez</p>
+               <a href="http://mrmendonez.wikispaces.com/Web+Animation" target="blank" class = "navbar-btn btn-warning btn pull-right">View Class Wiki</a>
+           </div> 
+       </div>
+        <div class = "modal fade" id = "contact" role = "dialog">
+            <div class = "modal-dialog">
+                <div class = "modal-content">
+                    <div class = "modal-header">
+                        <h4>Contact Web Design Teacher</h4>
+                    </div>
+                    <div class = "modal-body">
+                        <a href = "mailto:darryl.mendonez@sbschools.org" target = "blank" class = "btn btn-primary">Email</a>
+                        <a href = "https://plus.google.com/115694388437200922652/posts/p/pub" target = "blank" class = "btn btn-danger">Google+</a>
+                    </div>
+                    <div class = "modal-footer">
+                        <a class = "btn btn-default" data-dismiss = "modal">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src = "js/bootstrap.js"></script>
+    </body>    
+</html>
